@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Αξιολόγηση καθηγητών</title>
+</head>
+
+<body>
+    <h1>Αξιολόγηση καθηγητών - Σελίδα διαχειριστή</h1>
+    <table border="1">
+        <tr>
+            <th>Ονοματεπώνυμο</th>
+            <th>Email</th>
+            <th>Ενέργειες</th>
+        </tr>
+        <tr>
+            <td>Ανδρέας Μακρής</td>
+            <td>a.makris@ihu.gr</td>
+            <td><a href="">Διαγραφή</a></td>
+        </tr>
+        <tr>
+            <td>Βασίλειος Στεφανίδης</td>
+            <td>v.stefanidis@ihu.gr</td>
+            <td><a href="">Διαγραφή</a></td>
+        </tr>
+        <tr>
+            <td>Παναγιώτης Διαμαντόπουλος</td>
+            <td>p.diamantopoulos@ihu.gr</td>
+            <td><a href="">Διαγραφή</a></td>
+        </tr>
+        <tr>
+            <td>Χρήστος Βασιλείου</td>
+            <td>c.vasileiou@ihu.gr</td>
+            <td><a href="">Διαγραφή</a></td>
+        </tr>
+        <tr>
+            <td>Ευάγγελος Νικολάου</td>
+            <td>e.nikolaou@ihu.gr</td>
+            <td><a href="">Διαγραφή</a></td>
+        </tr>
+    </table>
+
+    <h3>Προσθήκη νέου καθηγητή</h3>
+    <form action="add-professor.php" method="post">
+        <p>Ονοματεπώνυμο: <input type="text" name="fullname"></p>
+        <p>Email: <input type="email" name="emailAddress"></p>
+        <p>Εργαστήριο:
+            <select name="lab">
+                <option value="informatics">Πληροφορικής</option>
+                <option value="telecommunications">Τηλεπικοινωνιών και Νέων Τεχνολογιών</option>
+                <option value="robotics">Ρομποτικής και Ευφυών Συστημάτων</option>
+                <option value="security">Ασφάλειας και Τεχνολογίας Δικτύων</option>
+            </select>
+        </p>
+        <p><input type="submit"></p>
+    </form>
+
+</body>
+
+</html>
